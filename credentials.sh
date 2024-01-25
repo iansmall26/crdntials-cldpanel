@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Extract values from credentials file
-username=$(awk '/Username:/ {print $2}' /home/debian/credentials.txt)
-email=$(awk '/Email:/ {print $2}' /home/debian/credentials.txt)
-firstName=$(awk '/firstName:/ {print $2}' /home/debian/credentials.txt)
-lastName=$(awk '/lastName:/ {print $2}' /home/debian/credentials.txt)
-password=$(awk '/Password:/ {print $2}' /home/debian/credentials.txt)
+username=$(awk '/Username:/ {print $2}' /home/ubuntu/credentials.txt)
+email=$(awk '/Email:/ {print $2}' /home/ubuntu/credentials.txt)
+firstName=$(awk '/firstName:/ {print $2}' /home/ubuntu/credentials.txt)
+lastName=$(awk '/lastName:/ {print $2}' /home/ubuntu/credentials.txt)
+password=$(awk '/Password:/ {print $2}' /home/ubuntu/credentials.txt)
 
 # Build clpctl command with extracted values
 clpctl_command="clpctl user:add \
